@@ -1,0 +1,101 @@
+nohup: ignoring input
+[0;34m🚀 Starting Porikroma Travel Platform...[0m
+[0;34m================================================[0m
+[1;33m🧹 Cleaning up existing processes...[0m
+[0;34m🏗️  Starting Backend (Spring Boot)...[0m
+[0;34m================================================[0m
+[1;33m📦 Installing backend dependencies...[0m
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.porikroma:porikroma-backend >-------------------
+[INFO] Building porikroma-backend 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.3.2:clean (default-clean) @ porikroma-backend ---
+[INFO] Deleting /home/md-huzaifa-islam/work/porikroma/backend/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ porikroma-backend ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ porikroma-backend ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 58 source files with javac [debug release 21] to target/classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ porikroma-backend ---
+[INFO] skip non existing resourceDirectory /home/md-huzaifa-islam/work/porikroma/backend/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ porikroma-backend ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ porikroma-backend ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ porikroma-backend ---
+[INFO] Building jar: /home/md-huzaifa-islam/work/porikroma/backend/target/porikroma-backend-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot:3.2.0:repackage (repackage) @ porikroma-backend ---
+[INFO] Replacing main artifact /home/md-huzaifa-islam/work/porikroma/backend/target/porikroma-backend-0.0.1-SNAPSHOT.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to /home/md-huzaifa-islam/work/porikroma/backend/target/porikroma-backend-0.0.1-SNAPSHOT.jar.original
+[INFO] 
+[INFO] --- install:3.1.1:install (default-install) @ porikroma-backend ---
+[INFO] Installing /home/md-huzaifa-islam/work/porikroma/backend/pom.xml to /home/md-huzaifa-islam/.m2/repository/com/porikroma/porikroma-backend/0.0.1-SNAPSHOT/porikroma-backend-0.0.1-SNAPSHOT.pom
+[INFO] Installing /home/md-huzaifa-islam/work/porikroma/backend/target/porikroma-backend-0.0.1-SNAPSHOT.jar to /home/md-huzaifa-islam/.m2/repository/com/porikroma/porikroma-backend/0.0.1-SNAPSHOT/porikroma-backend-0.0.1-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.782 s
+[INFO] Finished at: 2025-10-03T19:28:41+06:00
+[INFO] ------------------------------------------------------------------------
+[1;33m🚀 Starting Spring Boot application...[0m
+[0;32m📝 Backend started with PID: 237996[0m
+[1;33m📋 Backend logs are being written to backend.log[0m
+[1;33m⏳ Waiting for Backend API to start on port 8080...[0m
+[1;33m   Attempt 1/60...[0m
+[1;33m   Attempt 2/60...[0m
+[0;32m✅ Backend API is ready on port 8080[0m
+[1;33m⏳ Waiting for Socket.IO Server to start on port 9092...[0m
+[0;32m✅ Socket.IO Server is ready on port 9092[0m
+[0;34m🎨 Starting Frontend (React)...[0m
+[0;34m================================================[0m
+[1;33m📦 Installing frontend dependencies...[0m
+
+up to date, audited 1392 packages in 1s
+
+276 packages are looking for funding
+  run `npm fund` for details
+
+9 vulnerabilities (3 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+[1;33m🚀 Starting React development server...[0m
+[0;32m📝 Frontend started with PID: 238130[0m
+[1;33m📋 Frontend logs are being written to frontend.log[0m
+[1;33m⏳ Waiting for Frontend Development Server to start on port 3000...[0m
+[1;33m   Attempt 1/60...[0m
+[0;32m✅ Frontend Development Server is ready on port 3000[0m
+[0;32m🎉 SUCCESS! Porikroma Travel Platform is now running![0m
+[0;32m================================================[0m
+[0;32m🔗 Frontend:  http://localhost:3000[0m
+[0;32m🔗 Backend:   http://localhost:8080[0m
+[0;32m🔗 Socket.IO: http://localhost:9092[0m
+[0;32m================================================[0m
+[1;33m📋 Logs:[0m
+[1;33m   Backend:  tail -f backend.log[0m
+[1;33m   Frontend: tail -f frontend.log[0m
+[1;33m================================================[0m
+[1;33m🛑 To stop all services, run: ./stop.sh[0m
+[1;33m   Or press Ctrl+C and then run: ./cleanup.sh[0m
+[0;34mPress Ctrl+C to stop all services[0m
+./run.sh: line 206: 238130 Hangup                  nohup npm start > ../frontend.log 2>&1  (wd: ~/work/porikroma/frontend)
